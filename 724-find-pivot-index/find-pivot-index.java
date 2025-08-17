@@ -6,12 +6,11 @@ class Solution {
         }
         int leftsum=0;
         for(int i=0;i<nums.length;i++){
-            int current=nums[i];
-            int rightsum=totalsum-current-leftsum;
+            int rightsum=totalsum-nums[i]-leftsum;
             if(leftsum == rightsum){
                 return i;
             }
-            leftsum+=current;
+            leftsum+=nums[i];
         }
         return -1;    
     }
