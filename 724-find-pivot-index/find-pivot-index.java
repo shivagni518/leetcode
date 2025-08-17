@@ -7,7 +7,7 @@ class Solution {
         int leftsum=0;
         for(int i=0;i<nums.length;i++){
             int rightsum=totalsum-nums[i]-leftsum;
-            if(rightsum == leftsum){
+            if(leftsum == rightsum){
                 return i;
             }
             leftsum+=nums[i];
