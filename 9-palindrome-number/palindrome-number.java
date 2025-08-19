@@ -7,7 +7,10 @@ class Solution {
         digit=temp%10;
         rev=rev*10+digit;
         temp/=10;
-    }
-    return x==rev;
+    }if(x==rev){
+        return true;
+    }else{
+        return false;
     }  
+    }
 }
