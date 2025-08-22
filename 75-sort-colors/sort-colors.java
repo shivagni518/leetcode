@@ -7,9 +7,9 @@ class Solution {
             }else if(nums[i]==1){
                 white++;
             }
-            else{
+            else
             blue++;
-            }
+            
         }
         int index=0;
         for(int i=0;i<red;i++){
