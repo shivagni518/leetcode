@@ -13,10 +13,10 @@ class Solution {
                 x--;
             }
         }
-        if(x==0 && y==0){
-            return true;
-        }else{
-            return false;
-        }
+        return(x==0 && y==0)?true:false;
+        //     return true;
+        // }else{
+        //     return false;
+        // }
     }    
 }
