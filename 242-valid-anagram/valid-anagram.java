@@ -4,38 +4,37 @@ class Solution {
             return false;
         } 
 
-        // HashMap <Character,Integer> map1 = new LinkedHashMap<>(); 
-        // HashMap <Character,Integer> map2 = new LinkedHashMap<>();
+        HashMap <Character,Integer> map1 = new LinkedHashMap<>(); 
+        HashMap <Character,Integer> map2 = new LinkedHashMap<>();
 
-        // for(char c:s.toCharArray()){
-        //     map1.put(c,map1.getOrDefault(c,0)+1);
-        // }
-
-        // for(char c:t.toCharArray()){
-        //     map2.put(c,map2.getOrDefault(c,0)+1);
-        // }
-
-        // if(map1.equals(map2)){
-        //     return true;
-        // }else{
-        //     return false;
-        // }
-
-        HashMap <Character,Integer> map = new HashMap<>();
-
-        for(char c : s.toCharArray()){
-            map.put(c,map.getOrDefault(c,0)+1);
+        for(char c:s.toCharArray()){
+            map1.put(c,map1.getOrDefault(c,0)+1);
         }
 
-        for(char c : t.toCharArray()){
-            if(!map.containsKey(c)){
-                return false;
-            }
-            map.put(c,map.get(c)-1);
-            if(map.get(c)==0){
-                map.remove(c);
-            }
+        for(char c:t.toCharArray()){
+            map2.put(c,map2.getOrDefault(c,0)+1);
         }
-        return map.isEmpty();
+
+        if(map1.equals(map2)){
+            return true;
+        }
+            return false;
+        }
+
+        // HashMap <Character,Integer> map = new HashMap<>();
+
+        // for(char c : s.toCharArray()){
+        //     map.put(c,map.getOrDefault(c,0)+1);
+        // }
+
+        // for(char c : t.toCharArray()){
+        //     if(!map.containsKey(c)){
+        //         return false;
+        //     }
+        //     map.put(c,map.get(c)-1);
+        //     if(map.get(c)==0){
+        //         map.remove(c);
+        //     }
+        // }
+        // return map.isEmpty();
     }
-}
