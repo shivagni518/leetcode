@@ -9,6 +9,6 @@ class Solution {
     } 
     for(int i=x;i<nums.length;i++){
         nums[i]=0;
-    }   
+        }   
     }
 }
