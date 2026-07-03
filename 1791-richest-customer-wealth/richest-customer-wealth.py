@@ -9,5 +9,5 @@ class Solution:
         #         max=wealth
         # return max        
 
-        return max([sum(customer) for customer in accounts])
+        return max(sum(customer) for customer in accounts)
         
