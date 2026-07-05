@@ -1,6 +1,6 @@
 class Solution:
     def defangIPaddr(self, address: str) -> str:
-        return address.replace("." , "[.]")
+    #     return address.replace("." , "[.]")
 
         ans=""
         for i in address:
@@ -10,4 +10,4 @@ class Solution:
                 ans+="[.]"
         return ans
         
-        
+    
