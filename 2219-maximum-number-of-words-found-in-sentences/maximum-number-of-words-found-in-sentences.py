@@ -6,8 +6,8 @@ class Solution:
             for j in range(len(sentences[i])):
                 if sentences[i][j]==" ":
                     count+=1
-            if count > max:
-                max=count
+                if count > max:
+                    max=count
         return max            
 
 
