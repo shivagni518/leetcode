@@ -3,10 +3,9 @@ class Solution:
         mul=1
         add=0
         for i in str(n):
-            # i=int(i)
-            mul=mul*int(i)
-        # for j in str(n):
-            add=add+int(i)
+            i=int(i)
+            mul=mul*i
+            add=add+i
         return mul-add    
         
         # while n>0:
