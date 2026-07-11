@@ -3,7 +3,7 @@ class Solution:
         new = []
         for i in range(n):
             new.append(nums[i]) 
-            new.append(nums[i+n])
+            new.append(nums[n+i])
         return new    
 
 
