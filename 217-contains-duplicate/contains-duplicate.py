@@ -6,8 +6,8 @@ class Solution:
         #             return True
         # return False            
     
-        S=set(nums)
-        return len(S)!=len(nums)
+        s=set(nums)
+        return len(s)!=len(nums)
               
                         
         
