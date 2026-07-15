@@ -4,8 +4,7 @@ class Solution:
             return False
         elif sorted(s)==sorted(t):
             return True
-        else:
-            return False    
+        return False    
 
                 
 
