@@ -13,8 +13,8 @@ class Solution:
         # return n    
 
         freq = {}
-        for i in range(len(nums)):
-            freq[nums[i]] = freq.get(nums[i],0)+1
+        for i in nums:
+            freq[i] = freq.get(i,0)+1
         count = 0    
         for i in freq:
             if freq[i] > count:
