@@ -12,13 +12,13 @@ class Solution:
         #         n = nums[i]
         # return n    
 
-        freq = {}
+        f = {}
         for i in nums:
-            freq[i] = freq.get(i,0)+1
+            f[i] = f.get(i,0)+1
         count = 0    
-        for i in freq:
-            if freq[i] > count:
-                count = freq[i]
+        for i in f:
+            if f[i] > count:
+                count = f[i]
                 n = i
         return n   
                       
