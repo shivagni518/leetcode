@@ -3,8 +3,15 @@ class Solution:
         # num = sorted([i*i for i in nums])
         # return num
 
+        # for i in range(len(nums)):
+        #     nums[i] = nums[i]*nums[i]
+        # nums.sort()
+        # return nums   
+
+        ans=[]
         for i in range(len(nums)):
-            nums[i] = nums[i]*nums[i]
-        nums.sort()
-        return nums    
+            b = nums[i]*nums[i]
+            ans.append(b)
+        ans.sort()
+        return ans     
         
