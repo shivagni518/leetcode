@@ -7,9 +7,8 @@ class Solution:
             elif i == "D":
                 l.append(l[-1]*2)
             elif i == "+":
-                l.append(l[-1]+l[-2])  
+                l.append(l[-1]+l[-2])
             else:
-                l.append(int(i))
-        return sum(l)                                  
-
+                l.append(int(i)) 
+        return sum(l)               
         
