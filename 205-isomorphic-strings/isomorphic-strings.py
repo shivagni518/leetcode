@@ -13,7 +13,5 @@ class Solution:
                     return False
             else:
                 back[t[i]] = s[i]           
-        return True                    
-
-
+        return True     
         
