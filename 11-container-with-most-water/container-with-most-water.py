@@ -6,7 +6,7 @@ class Solution:
         while start < end:
             b = end - start
             h = min(height[start],height[end])
-            maxWater = max(maxWater,b*h)
+            maxWater = max(maxWater,h*b)
             if height[start] < height[end]:
                 start +=1
             else:
