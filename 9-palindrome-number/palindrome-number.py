@@ -3,6 +3,6 @@ class Solution:
         x1 = str(x)
         y = x1[::-1]
         if x1 == y:
-            return True
-        return False    
+            return True 
+        return False       
         
